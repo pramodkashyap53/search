@@ -43,7 +43,7 @@ def index(request):
         words=para.split(' ')
         # print(words)
         for word in words:
-            word=word.lower()
+            word=word.lower().rstrip()
             if (word not in invertedIndexes):
                 invertedIndexes[word]=[(paragraphs.index(para))]
             else:
