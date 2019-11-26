@@ -17,9 +17,10 @@ Including another URLconf
 from django.urls import path,include
 from search.views import  TapSearch,index,home,search,clear
 urlpatterns = [
-    path(r'home/',home, name='Postcreate'),
-   path(r'index/',index, name='Postcreate'),
-    path(r'search/',search, name='Postupdate'),
-    path(r'clear/',clear, name='PostList'),
+    path(r'',home, name='home'),
+    path(r'home/',home, name='home'),
+   path(r'index/',index, name='home'),
+    path(r'search/',search, name='home'),
+    path(r'clear/',clear, name='home'),
    
 ]
