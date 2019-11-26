@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'wje6i(geiljmc!9u$ks%nwkv8gj=c0!qclfk9ama@sbu!=cdc5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['demo-tapsearch.herokuapp.com']
 
