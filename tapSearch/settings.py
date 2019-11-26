@@ -25,7 +25,7 @@ SECRET_KEY = 'wje6i(geiljmc!9u$ks%nwkv8gj=c0!qclfk9ama@sbu!=cdc5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://demo-tapsearch.herokuapp.com/']
+ALLOWED_HOSTS = ['demo-tapsearch.herokuapp.com']
 
 
 # Application definition
