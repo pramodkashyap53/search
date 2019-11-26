@@ -63,12 +63,12 @@ def search(request):
     if os.path.exists(invertedIndex_filename):
         with open(invertedIndex_filename, 'rb') as handle:
             invertedIndexes = pickle.load(handle)
-            if data in invertedIndexes:
+            if data.lower() in invertedIndexes:
                 if os.path.exists(paragraph_filename):
         # "with" statements are very handy for opening files. 
                     with open(paragraph_filename,'rb') as rfp: 
                         paragraphs = pickle.load(rfp)
-                    for ind in invertedIndexes[data]:    
+                    for ind in invertedIndexes[data.lower()]:    
                         paragaraphs_list.append(paragraphs[ind])    
     return render(request,"searchpage.html",{'paragraphs_list':paragaraphs_list})
 
