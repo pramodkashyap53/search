@@ -1,0 +1,1 @@
+web: gunicorn tapSearch.wsgi --log-file -
